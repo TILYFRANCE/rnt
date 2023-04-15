@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900');
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+$font: 'Lato', sans-serif;
+$big: 'League Spartan', sans-serif;
+
+$red: #EF2F3C;
+$white: #F6F6E9;
+$blue: #276FBF;
+$dark: #333D37;
+$yellow: #F0A202;
+
+$mavo: #f1c40f;
+$maitso: #27ae60;
+$mena: $red;
+$orange: #e67e22;
+
+// mixin size
+$xsm: 374px;
+$sm: 576px; 
+$md: 768px; 
+$lg: 992px; 
+$xl: 1200px; 
+$xxl: 1400px;
+
+//For Small
+@mixin sm {
+  @media screen and (max-width: ($sm)) {
+    @content;
+  }
+}
+
+#timer {
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font;
+  font-size: .7em;
+  letter-spacing: 5px;
+  padding-bottom: 2rem;
+  @include sm {
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.days, .hours, .minutes, .seconds {
+  border-radius: 5px;
+  width: 200px;
+  padding: 2rem;
+  margin: 2rem;
+  @include sm {
+    width: 32vw;
+  }
+}
+
+.days {
+  background: $mavo;
+}
+
+.hours {
+  background: $maitso;
+}
+
+.minutes {
+  background: $mena;
+}
+
+.seconds {
+  background: $orange;
+  .numbers {
+   
+  }
+}
+
+.numbers {
+  font-family: $big;
+  color: $dark;
+  font-size: 4em;
+}
