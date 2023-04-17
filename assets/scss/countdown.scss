@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900');
-
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 $font: 'Lato', sans-serif;
-$big: 'League Spartan', sans-serif;
+$big: 'Montserrat', sans-serif;
 
 $red: #EF2F3C;
 $white: #F6F6E9;
@@ -31,6 +31,16 @@ $xxl: 1400px;
   }
 }
 
+#countdown {
+  background: $white;
+}
+
+
+#lasa, #definition {
+  font-family: "Indie Flower";
+  font-weight: bold;
+}
+
 #timer {
   display: flex;
   justify-content: space-between;
@@ -42,7 +52,6 @@ $xxl: 1400px;
   letter-spacing: 5px;
   padding-bottom: 2rem;
   @include sm {
-    width: 100vw;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;

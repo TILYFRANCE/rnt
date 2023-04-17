@@ -22,11 +22,11 @@ let timer = setInterval(function() {
     "<div class=\"days\"> \
   <div class=\"numbers\">" + days + "</div>jours</div> \
 <div class=\"hours\"> \
-  <div class=\"numbers\">" + hours + "</div>heures</div> \
+  <div class=\"numbers\">" + hours + "</div>h</div> \
 <div class=\"minutes\"> \
-  <div class=\"numbers\">" + minutes + "</div>minutes</div> \
+  <div class=\"numbers\">" + minutes + "</div>min</div> \
 <div class=\"seconds\"> \
-  <div class=\"numbers\">" + seconds + "</div>secondes</div> \
+  <div class=\"numbers\">" + seconds + "</div>sec</div> \
 </div>";
 
 }, 1000);
