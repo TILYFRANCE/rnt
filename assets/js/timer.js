@@ -16,6 +16,11 @@ let timer = setInterval(function() {
   let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+  
+const startDate2023 = new Date("2023-04-22T09:00:00");
+
+
+
 
   // display
   document.getElementById("timer").innerHTML =
