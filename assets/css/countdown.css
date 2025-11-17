@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+#timer {
+  display: flex;
+  justify-content: space-between;
+  color: #F6F6E9;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: .7em;
+  letter-spacing: 5px;
+  padding-bottom: 2rem; }
+  @media screen and (max-width: 576px) {
+    #timer {
+      width: 100vw;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center; } }
+
+.days, .hours, .minutes, .seconds {
+  border-radius: 5px;
+  width: 200px;
+  padding: 2rem;
+  margin: 2rem; }
+  @media screen and (max-width: 576px) {
+    .days, .hours, .minutes, .seconds {
+      width: 32vw; } }
+
+.days {
+  background: #f1c40f; }
+
+.hours {
+  background: #27ae60; }
+
+.minutes {
+  background: #EF2F3C; }
+
+.seconds {
+  background: #e67e22; }
+
+.numbers {
+  font-family: "League Spartan", sans-serif;
+  color: #333D37;
+  font-size: 4em; }
+
+/*# sourceMappingURL=countdown.css.map */
